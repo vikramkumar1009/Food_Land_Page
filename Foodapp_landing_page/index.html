@@ -23,10 +23,10 @@
         </div>
         <ul class="nav__links">
           <li class="link"><a href="#">Home</a></li>
-          <li class="link"><a href="#">Menu</a></li>
-          <li class="link"><a href="#">About Us</a></li>
-          <li class="link"><a href="#">Services</a></li>
-          <li class="link"><a href="#">Contact</a></li>
+          <li class="link"><a href="#Menu">Menu</a></li>
+          <li class="link"><a href="#About">About Us</a></li>
+          <li class="link"><a href="#services-container">Services</a></li>
+          <li class="link"><a href="#Contact">Contact</a></li>
           <li class="link"><a href="#">Sign in</a></li>
           <li class="link"><a href="#">Sign up</a></li>
         </ul>
@@ -54,7 +54,7 @@
       </section>
 
       <!-- Featured Dishes -->
-      <section class="featured">
+      <section id="Menu" class="featured">
         <h2>Featured Dishes</h2>
         <div class="featured__grid">
           <div class="featured__card">
@@ -96,8 +96,49 @@
         </div>
       </section>
 
+      <section id="services-container">
+        <h1 style="font-size: 2.5rem; text-align: center;" class="headingprimary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+               
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Experience the ease of online food ordering with our intuitive platform. Browse our extensive menu, featuring high-quality images and detailed descriptions, to find your favorite dishes. Place your order for delivery or pickup at your convenience. Our system ensures a seamless process, allowing you to enjoy your meal without hassle.</p>
+            </div>
+            <div class="box">
+                
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">At MealsOnWheels, we specialize in delivering exceptional culinary experiences tailored to your event's unique needs. Our comprehensive services include customized menu planning, meticulous food preparation, and professional service staff to ensure a seamless event. Whether it's a corporate gathering, wedding, or private party</p>
+            </div>
+            <div class="box">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Bulk ordering refers to the practice of purchasing large quantities of products in a single transaction, often to secure discounted pricing. This approach is commonly utilized by businesses, organizations, and individuals aiming to meet substantial inventory needs or to benefit from economies of scale. Industries such as eCommerce</p>
+            </div>
+        </div>
+    </section>
+
+      <!-- About Us Section -->
+<section id="About" class="about">
+  <div class="about__content">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>Foodie Delight</strong>, your go-to destination for delicious meals delivered straight to your doorstep. 
+      We are passionate about bringing you the best dishes from top restaurants in your area. 
+      Our mission is to make food ordering simple, fast, and enjoyable.
+    </p>
+    <p>
+      With a team of food enthusiasts, we ensure that every meal is prepared with love and care. 
+      Whether you're craving spicy pasta, grilled salmon, or a veggie pizza, we've got you covered. 
+      Join us on this culinary journey and experience the joy of great food!
+    </p>
+    <button class="btn">Learn More</button>
+  </div>
+  <div class="about__image">
+    <img src="images/home.avif" alt="About Us Image" />
+  </div>
+</section>
+
       <!-- Call to Action -->
-      <section class="cta">
+      <section id="Contact" class="cta">
         <h2>Join Our Foodie Community</h2>
         <p>
           Sign up now to get exclusive discounts, updates, and more delivered
