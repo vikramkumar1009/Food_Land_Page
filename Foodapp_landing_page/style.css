@@ -17,10 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensures full height usage */
- 
 }
-
-
 
 /* Loading Animation */
 body::before {
@@ -60,7 +57,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
@@ -93,7 +89,7 @@ nav {
 
 .nav__links .link a {
   text-decoration: none;
-color: black;
+  color: black;
   font-weight: 700;
   font-size: 1.1rem;
   position: relative;
@@ -218,7 +214,6 @@ color: black;
   padding: 107px;
   text-align: center;
   color: black;
-
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease-out forwards;
@@ -325,7 +320,6 @@ color: black;
 .featured h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-
 }
 
 .featured__grid {
@@ -494,9 +488,53 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+}
+  body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  background-image: url('images/home5.avif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Ensures full height usage */
+}
+
+/* Loading Animation */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
   .hero {
     flex-direction: column;
     text-align: center;
+  }
+  .hero__image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    animation: float 4s ease-in-out infinite;
   }
 
   .featured__grid {
@@ -524,9 +562,57 @@ footer {
   .nav__links.active {
     display: block;
   }
-}
+
 
 @media (max-width: 480px) {
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('images/home5.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Ensures full height usage */
+  }
+  
+  /* Loading Animation */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    animation: fadeOut 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    animation: float 4s ease-in-out infinite;
+  }
+
   .featured__grid {
     grid-template-columns: 1fr;
   }
@@ -538,6 +624,20 @@ footer {
 
   .cta__form input {
     width: 100%;
+  }
+
+  /* Adjust section padding and font sizes */
+  .hero__content h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+
+  .footer__content {
+    gap: 20px;
+  }
+
+  .footer__socials .socials a {
+    font-size: 1.3rem;
   }
 }
 
@@ -565,13 +665,11 @@ footer {
 .about__content h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  
 }
 
 .about__content p {
   font-size: 1.1rem;
   line-height: 1.6;
- 
   margin-bottom: 1.5rem;
 }
 
@@ -597,25 +695,23 @@ footer {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
-/* Services */
-#services{
+/* Services Section */
+#services {
   margin-top: 34px;
   margin-bottom: 1px;
   display: flex;
-  
-  
-  
-}
-#services-container{
-  padding: 20px 0px;
-  background-color: #eed8ac;
-  padding: 0.75rem 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-#services .box{
+#services-container {
+  padding: 20px 0px;
+  background-color: #eed8ac;
+}
+
+#services .box {
   border: 2px solid brown;
   padding: 34px;
   margin: 2px 36px;
@@ -623,11 +719,20 @@ footer {
   background-color: #fff;
   margin-bottom: 20px;
 }
-#services .box img{
+
+#services .box img {
   height: 60px;
   margin: auto;
   display: block;
 }
-#services .box p{
-  font-family: 'Bree Serif', serif;
+
+#services .box h4 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#services .box p {
+  margin-top: 10px;
+  text-align: center;
 }
